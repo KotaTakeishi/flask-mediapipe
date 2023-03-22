@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flask&times;mediapipe</title>
+</head>
+<body>
+    <h2>flask&times;mediapipe</h2>
+    <ul>
+        <li><a href="{{ url_for('default') }}">Mediapipeデフォルト</a></li>
+        <li><a href="{{ url_for('drawing') }}">お絵描きカメラ</a></li>
+    </ul>
+    <figure>
+        <p>Hand Landmark Model</p>
+        <img src="https://mediapipe.dev/images/mobile/hand_landmarks.png" alt="hand_landmarks" style="max-width: 50%; height: auto;">
+        <figcaption>出典：<cite><a href="https://google.github.io/mediapipe/solutions/hands.html">MediaPipe Hands</a><cite><figcaption>
+    <figure>
+</body>
+</html>

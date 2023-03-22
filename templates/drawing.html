@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flask&times;mediapipe</title>
+</head>
+
+<body>
+    <h2>お絵描きカメラ</h2>
+    <div style="display: flex;">
+        <img src="{{ url_for('video_feed', flag=1) }}">
+        <div style="margin-left: 20px;">
+            <h4><使用方法></h4>
+            <p>・カメラに右手全体が十分に入るようにして、手のひらをカメラの方に向ける。</p>
+            <p>・親指を曲げた状態で人差し指を動かすと、線が描画される。</p>
+            <p>・小指を曲げると、線が消えリセットされる。</p>
+            <p>※右手でなければ正常に動きません。すみません。</p>
+            <a href="{{ url_for('index') }}">戻る</a>
+        </div>
+    </div>
+</body>
+
+</html>
