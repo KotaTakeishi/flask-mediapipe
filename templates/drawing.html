@@ -4,22 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>flask&times;mediapipe</title>
 </head>
 
 <body>
-    <h2>お絵描きカメラ</h2>
-    <div style="display: flex;">
-        <img src="{{ url_for('video_feed', flag=1) }}">
-        <div style="margin-left: 20px;">
-            <h4><使用方法></h4>
-            <p>・カメラに右手全体が十分に入るようにして、手のひらをカメラの方に向ける。</p>
-            <p>・親指を曲げた状態で人差し指を動かすと、線が描画される。</p>
-            <p>・小指を曲げると、線が消えリセットされる。</p>
-            <p>※右手でなければ正常に動きません。すみません。</p>
-            <a href="{{ url_for('index') }}">戻る</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold ms-4" href="./index.html">flask&times;mediapipe</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="d-flex mt-2">
+            <img src="{{ url_for('video_feed', flag=1) }}">
+            <div class="ms-4">
+                <h2 class="my-2">お絵描きカメラ</h2>
+                <h4><使用方法></h4>
+                <p>・カメラに右手全体が十分に入るようにして、手のひらをカメラの方に向ける。</p>
+                <p>・親指を曲げた状態で人差し指を動かすと、線が描画される。</p>
+                <p>・小指を曲げると、線が消えリセットされる。</p>
+                <p>※右手でなければ正常に動きません。すみません。</p>
+                <a href="{{ url_for('index') }}">戻る</a>
+            </div>
         </div>
     </div>
+    <footer class="bg-lignt d-flex justify-content-center align-items-center text-muted">
+        <small>&copy;2023-KotaTakeishi</small>
+    </footer>
 </body>
 
 </html>
