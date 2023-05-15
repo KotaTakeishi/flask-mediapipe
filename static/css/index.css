@@ -1,0 +1,20 @@
+.card {
+    cursor: pointer;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,.12), 0 2px 3px 0 rgba(0,0,0,.22);
+	transition: .3s;
+}
+
+.card:not(:last-child)  {
+    margin-right: 1rem;
+}
+
+@media (max-width:768px) {
+    .card:not(:last-child)  {
+        margin-bottom: 1rem;
+    }
+}
+
+.card:hover {
+    box-shadow: 0 15px 30px -5px rgba(0,0,0,.15), 0 0 5px rgba(0,0,0,.1);
+	transform: translateY(-4px);
+}

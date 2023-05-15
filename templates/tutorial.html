@@ -18,12 +18,13 @@
             </button>
         </div>
     </nav>
-    <div class="container">
+    <div class="container py-4">
         <div class="d-flex mt-2">
             <img src="{{ url_for('video_feed', flag=0) }}">
             <div class="ms-4">
-                <h2 class="my-2">Mediapipeデフォルト</h2>
-                <a href="{{ url_for('index') }}">戻る</a>
+                <h2 class="my-2">チュートリアル</h2>
+                <p>公式ドキュメントに記載されたチュートリアル。画像内の手のランドマークを検出します。</p>
+                <a href="{{ url_for('index') }}" class="btn btn-primary mt-5">Back</a>
             </div>
         </div>
     </div>

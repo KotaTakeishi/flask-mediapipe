@@ -11,24 +11,25 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand fw-bold ms-4" href="./index.html">flask&times;mediapipe</a>
+            <a class="navbar-brand fw-bold ms-4" href="{{ url_for('index') }}">flask&times;mediapipe</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
         </div>
     </nav>
-    <div class="container">
+    <div class="container py-4">
         <div class="d-flex mt-2">
             <img src="{{ url_for('video_feed', flag=1) }}">
             <div class="ms-4">
                 <h2 class="my-2">お絵描きカメラ</h2>
+                <p class="card-text">ランドマークを利用して、画像上に線を描画できるようにしました。線を消すこともできます。</p>
                 <h4><使用方法></h4>
                 <p>・カメラに右手全体が十分に入るようにして、手のひらをカメラの方に向ける。</p>
                 <p>・親指を曲げた状態で人差し指を動かすと、線が描画される。</p>
                 <p>・小指を曲げると、線が消えリセットされる。</p>
                 <p>※右手でなければ正常に動きません。すみません。</p>
-                <a href="{{ url_for('index') }}">戻る</a>
+                <a href="{{ url_for('index') }}" class="btn btn-primary mt-5">Back</a>
             </div>
         </div>
     </div>

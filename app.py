@@ -17,9 +17,9 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
-@app.route("/default")
-def default():
-    return render_template("default.html")
+@app.route("/tutorial")
+def tutorial():
+    return render_template("tutorial.html")
 
 @app.route("/drawing")
 def drawing():
@@ -41,7 +41,7 @@ def gen(camera, flag):
             if results.multi_hand_landmarks:
                 for hand_landmarks in results.multi_hand_landmarks:
                     if flag == 0:
-                        default(image, hand_landmarks)
+                        tutorial(image, hand_landmarks)
                     elif flag == 1:
                         hand_draw(camera, image, hand_landmarks)
                     else:
@@ -55,7 +55,7 @@ def gen(camera, flag):
             else:
                 print("frame is none")
 
-def default(image, hand_landmarks):
+def tutorial(image, hand_landmarks):
     mp_drawing.draw_landmarks(
         image,
         hand_landmarks,
