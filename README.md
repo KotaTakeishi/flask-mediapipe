@@ -2,8 +2,8 @@
 
 ## 概要
 
-[mediapipe](https://mediapipe.dev/)という人体検知の機械学習ライブラリがあったので遊んでみた。  
-flaskと組み合わせてブラウザで表示できるようにした。 
+[mediapipe](https://developers.google.com/mediapipe)という機械学習ライブラリがあったので使ってみた。  
+flaskと組み合わせてブラウザで表示できるようにした。 mediapipeを使った部分は、プログラミングを始めて3か月くらいに書いたコードをそのまま使用しているため、非常に見にくい。
 ※PCの内蔵カメラを使用します。
 
 
