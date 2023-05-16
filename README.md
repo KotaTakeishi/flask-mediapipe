@@ -3,7 +3,9 @@
 ## 概要
 
 [mediapipe](https://developers.google.com/mediapipe)という機械学習ライブラリがあったので使ってみた。  
-flaskと組み合わせてブラウザで表示できるようにした。 mediapipeを使った部分は、プログラミングを始めて3か月くらいに書いたコードをそのまま使用しているため、非常に見にくい。
+flaskと組み合わせてブラウザで表示できるようにした。  
+mediapipeを使った部分は、プログラミングを始めて3か月くらいに書いたコードをそのまま使用しているため、非常に見にくい。  
+さらに、mediapipeのversionがいつのまにか0.10になっていたため、古いバージョンをインストールする必要がある。(最新バージョンでは動作しなかった。)  
 ※PCの内蔵カメラを使用します。
 
 
@@ -16,8 +18,7 @@ git clone git@github.com:KotaTakeishi/flask-mediapipe.git
 
 ライブラリをインストール
 ```
-pip install flask
-pip install mediapipe
+pip install -r requirements.txt
 ```
 
 Webサーバを立てる
